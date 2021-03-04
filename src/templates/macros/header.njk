@@ -1,11 +1,14 @@
-{% macro nav(bgColor, borderColor, navbarColor, activePage) %}
-<header class="site-header fixed-top {{bgColor}} border-bottom {{borderColor}}">
+{% macro nav(bgColor, navbarColor, activePage) %}
+<header class="site-header fixed-top {{bgColor}}">
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-    <div class="container">
+    <div class="col-12">
 
         <!-- Navbar -->
         <nav class="navbar main-nav navbar-expand-lg {{navbarColor}}" aria-label="Main navigation">
-            <a href="/" class="navbar-brand d-inline-flex text-uppercase">Dan Smith <i class="material-icons ml-2" aria-hidden="true">desktop_mac</i></a>
+
+            <a href="/" class="navbar-brand d-inline-flex">
+                <img src="assets/img/logo.svg" alt="Clear Your View">
+            </a>
 
             <button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -20,16 +23,29 @@
                 <ul class="navbar-nav ml-auto">
                     
                     <li class="nav-item">
-                        <a href="profile.html" class="nav-link{%if activePage == 'profile' %} active{% endif %}">Profile</a>
+                        <a href="lung.html" class="nav-link{%if activePage == 'lung' %} active{% endif %}">Lung Cancer</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="work.html" class="nav-link{%if activePage == 'work' %} active{% endif %}">Work</a>
+                        <a href="colo.html" class="nav-link{%if activePage == 'colo' %} active{% endif %}">Colorectal Cancer</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link{%if activePage == 'contact' %} active{% endif %}">Contact</a>
+                        <a href="data.html" class="nav-link{%if activePage == 'data' %} active{% endif %}">Data</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="resources.html" class="nav-link{%if activePage == 'resources' %} active{% endif %}">Resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link{%if activePage == 'news' %} active{% endif %}">News & Media</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-primary btn-sm">Commit to Test</a>
+                    </li>
+
 
                 </ul>
             </div>

@@ -1,4 +1,10 @@
 .btn {
-    letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.btn-primary {
+	color: $white !important;
+	font-family: $font-family-heading;
+	// font-size: .75rem;
+	border-radius: 4px;
 }

@@ -1,8 +1,8 @@
 {
-    "name": "focus",
+    "name": "clearyourview",
     "version": "1.3.0",
-    "description": "A portfolio theme for Bootstrap.",
-    "author": "11bits",
+    "description": "",
+    "author": "",
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^2.2.0",
         "autoprefixer": "^9.8.0",

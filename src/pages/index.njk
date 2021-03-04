@@ -2,24 +2,18 @@
 {% set title = "Home" %}
 {% block content -%}
 {% import 'macros/header.njk' as header -%}
-{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'home')}}
+{{header.nav('bg-white', 'navbar-light', 'home')}}
     <main id="content">
 
         <!-- Hero -->
         <div class="container py-5">
-            <h1 class="display-2 pb-2 hero-animation">
-                <span class="text-wrapper">
-                    <span class="word">Well </span>
-                    <span class="word">hello, </span>
-                    <span class="word">world!</span>
-                </span>
-            </h1>
+            
 
             <hr class="border-3 border-white my-4 ml-0 text-left hero-animation-line" role="presentation">
 
             <div class="row hero-animation-body">
                 <div class="col-lg-8">
-                    <p class="font-serif lead mb-4 text-secondary">
+                    <p class="lead mb-4 text-secondary">
                         Multidisciplinary UX technologist with special interests in interaction design, information architecture, user research, and front-end development
                     </p>
                 </div>
@@ -104,37 +98,6 @@
             </div>
         </div>
     </main>
-
-    <!-- For title text animation in header.njk -->
-    <script>
-
-    anime.timeline({loop: false})
-      .add({
-        targets: '.hero-animation .word',
-        scale: [0.75,1],
-        opacity: [0,1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 300,
-        delay: (el, i) => 150 * (i+1)
-      }).add({
-        targets: '.hero-animation-line',
-        // scaleX: [0,1],
-        width: [0, '25%'],
-        opacity: [0.5,1],
-        easing: "easeOutExpo",
-        duration: 360,
-        delay: (el, i, l) => 10 * (l - i)
-      }).add({
-        targets: '.hero-animation-body',
-        scaleX: [1,1],
-        translateY: [18,0],
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 800,
-        delay: (el, i, l) => 10 * (l - i)
-      });
-    </script>
 
     {% import 'macros/footer.njk' as footer -%}
     {{footer.footer('bg-white', 'text-dark')}}

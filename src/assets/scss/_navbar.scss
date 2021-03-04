@@ -1,106 +1,148 @@
 body {
-    padding-top: calc(4rem - 1px);
+    padding-top: calc(5rem - 1px);
 }
 
+header {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+
+
+// colors
+.navbar-light {
+    .nav-link {
+        color: $black !important;
+        transition: color 0.2s;
+
+        &:hover,
+        &.active {
+            color: $danger !important;
+        }
+    }
+
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+        background-color: $black;
+    }
+}
+
+
+// spacing
 .main-nav {
 
+    transition: font-size 0.15s linear;
+
     .navbar-brand {
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-
-        i {
-            font-size: inherit;
-            line-height: inherit;
-        }
-
         img {
-            max-height: 30px;
+            max-height: 40px;
             width: auto;
         }
     }
 
-    @include media-breakpoint-up(lg) {
-
-        font-size: $font-size-sm;
-
-        .nav-item {
-            padding-left: 2.5rem;
-        }
-
-        .nav-link {
-            border-bottom: 3px solid transparent;
-            display: inline-block;
-            letter-spacing: 2px;
-            padding-top: 1.25rem;
-            padding-bottom: 1.25rem;
-            transition: border-color 0.2s linear;
-        }
-
-        .dropdown-menu {
-            font-size: $font-size-sm;
-        }
-
-        .dropdown-item {
-            letter-spacing: 1px;
-            transition: background-color 0.2s, color 0.2s linear;
-        }
-    }
-
     @include media-breakpoint-down(md) {
+        // font-size: 1rem;
+
         padding-top: .5rem;
         padding-bottom: .5rem;
 
+        .nav-item {
+            padding-left: 0;
+        }
+
         .nav-item + .nav-item {
-            border-top: 1px solid;
+            border-top: 1px solid $gray-100;
+            padding-top: .25rem;
+            padding-bottom: .25rem;
         }
 
         .nav-link {
             padding-top: 0.75rem;
             padding-bottom: 0.75rem;
         }
-    }
-}
 
-.navbar-dark {
-
-    .nav-item + .nav-item {
-        border-color: $dark;
-    }
-
-    .nav-link {
-
-        &:hover,
-        &.active {
-            border-color: $white;
+        .btn-primary.btn-sm {
+            font-size: 1rem;
         }
     }
-}
 
-.navbar-light {
 
-    .nav-item + .nav-item {
-        border-color: $light;
-    }
+    @include media-breakpoint-up(lg) {
 
-    .nav-link {
+        font-size: .66rem;
+        font-size: 1.16vw;
 
-        &:hover,
-        &.active {
-            border-color: $black;
+        .btn-primary.btn-sm {
+            font-size: .66rem;
+            font-size: 1.16vw;
         }
+
+        .nav-item {
+            padding-left: 1rem;
+
+            padding-top: 1.3rem;
+            padding-bottom: 1.3rem;
+            align-self: center;
+        }
+
+        .nav-link {
+            display: inline-block;
+            letter-spacing: 1.6px;
+            transition: border-color 0.2s linear;
+        }
+
     }
-}
 
-.side-nav {
+    @include media-breakpoint-up(xl) {
+        font-size: .72rem;
+        font-size: 1.2vw;
 
-    &.sticky-top {
-        top: 5rem;
+        .btn-primary.btn-sm {
+            font-size: .72rem;
+            font-size: 1.2vw;
+        }
+
+        .nav-item {
+            padding-left: 1.65rem;
+        }
+
     }
 
-    a.active::after {
-        font-family: "Material Icons";
-        content: "\e5c8";
-        margin-left: .25rem;
-        vertical-align: middle;
+    @include media-breakpoint-up(xxl) {
+        font-size: .88rem;
+
+        .btn-primary.btn-sm {
+            font-size: .88rem;
+        }
+
+        .nav-item {
+            padding-left: 2rem;
+        }
+
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 1rem;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+
+        .nav-item {
+            padding-left: 0;
+        }
+
+        .nav-item + .nav-item {
+            border-top: 1px solid $gray-100;
+            padding-top: .25rem;
+            padding-bottom: .25rem;
+        }
+
+        .nav-link {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        .btn-primary.btn-sm {
+            font-size: 1rem;
+        }
     }
 }

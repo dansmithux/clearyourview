@@ -12,10 +12,14 @@ $gray-700:          #404040;
 $gray-800:          #262626;
 $gray-900:          #170f18;
 
-// $primary-turquoise:           #40E0D0;
+
+$yellow:			#f7e428;
+$light-blue: 		#bcc5db;
+$red:				#e71d2b;
+$orange:			#ff6500;
 
 
-$primary:           #b9f2ff;
+$primary:           $red;
 $secondary:         $gray-200;
 $success:           #26a65b;
 $info:              #00acc1;
@@ -24,7 +28,7 @@ $danger:            #ff0000;
 $light:             $gray-100;
 $dark:              $gray-800;
 $white:             #fff;
-$black:             #0e0e0e;
+$black:             #000;
 
 // Add theme colors for backgrounds and buttons.
 
@@ -73,8 +77,8 @@ $body-color:                $white;
 
 // Fonts
 
-$font-family-serif: 'Playfair Display', serif;
-$font-family-sans-serif: 'Fira Sans', sans-serif;
+$font-family-heading: 'Poppins', sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
 
 $h1-font-size:                  3rem;
 $h2-font-size:                  2.25rem;
@@ -83,7 +87,7 @@ $h4-font-size:                  1.5rem;
 $h5-font-size:                  1.25rem;
 $h6-font-size:                  1rem;
 
-$headings-font-family:          $font-family-serif;
+$headings-font-family:          $font-family-heading;
 $headings-font-weight:          600;
 $headings-margin-bottom:        .75rem;
 

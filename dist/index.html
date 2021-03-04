@@ -11,12 +11,13 @@
       gtag('config', 'G-VVR97X6L2R');
     </script>
     
-    <title>Dan Smith | Home</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Goole fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -41,13 +42,16 @@
 
 <body>
 
-<header class="site-header fixed-top bg-black border-bottom border-dark">
+<header class="site-header fixed-top bg-white">
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-    <div class="container">
+    <div class="col-12">
 
         <!-- Navbar -->
-        <nav class="navbar main-nav navbar-expand-lg navbar-dark" aria-label="Main navigation">
-            <a href="/" class="navbar-brand d-inline-flex text-uppercase">Dan Smith <i class="material-icons ml-2" aria-hidden="true">desktop_mac</i></a>
+        <nav class="navbar main-nav navbar-expand-lg navbar-light" aria-label="Main navigation">
+
+            <a href="/" class="navbar-brand d-inline-flex">
+                <img src="assets/img/logo.svg" alt="Clear Your View">
+            </a>
 
             <button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -62,16 +66,29 @@
                 <ul class="navbar-nav ml-auto">
                     
                     <li class="nav-item">
-                        <a href="profile.html" class="nav-link">Profile</a>
+                        <a href="lung.html" class="nav-link">Lung Cancer</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="work.html" class="nav-link">Work</a>
+                        <a href="colo.html" class="nav-link">Colorectal Cancer</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="data.html" class="nav-link">Data</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News & Media</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-primary btn-sm">Commit to Test</a>
+                    </li>
+
 
                 </ul>
             </div>
@@ -84,19 +101,13 @@
 
         <!-- Hero -->
         <div class="container py-5">
-            <h1 class="display-2 pb-2 hero-animation">
-                <span class="text-wrapper">
-                    <span class="word">Well </span>
-                    <span class="word">hello, </span>
-                    <span class="word">world!</span>
-                </span>
-            </h1>
+            
 
             <hr class="border-3 border-white my-4 ml-0 text-left hero-animation-line" role="presentation">
 
             <div class="row hero-animation-body">
                 <div class="col-lg-8">
-                    <p class="font-serif lead mb-4 text-secondary">
+                    <p class="lead mb-4 text-secondary">
                         Multidisciplinary UX technologist with special interests in interaction design, information architecture, user research, and front-end development
                     </p>
                 </div>
@@ -181,37 +192,6 @@
             </div>
         </div>
     </main>
-
-    <!-- For title text animation in header.njk -->
-    <script>
-
-    anime.timeline({loop: false})
-      .add({
-        targets: '.hero-animation .word',
-        scale: [0.75,1],
-        opacity: [0,1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 300,
-        delay: (el, i) => 150 * (i+1)
-      }).add({
-        targets: '.hero-animation-line',
-        // scaleX: [0,1],
-        width: [0, '25%'],
-        opacity: [0.5,1],
-        easing: "easeOutExpo",
-        duration: 360,
-        delay: (el, i, l) => 10 * (l - i)
-      }).add({
-        targets: '.hero-animation-body',
-        scaleX: [1,1],
-        translateY: [18,0],
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 800,
-        delay: (el, i, l) => 10 * (l - i)
-      });
-    </script>
 
     
     <footer class="bg-white text-dark">

@@ -34,7 +34,11 @@ $black:             #000;
 
 $theme-colors: (
     "black":        $black,
-    "white":        $white
+    "white":        $white,
+    "yellow":       $yellow,
+    "orange":		$orange,
+    "red":			$red
+
 );
 
 // Options
@@ -72,8 +76,8 @@ $border-color:              $gray-800;
 
 // Body
 
-$body-bg:                   $black;
-$body-color:                $white;
+$body-bg:                   $white;
+$body-color:                $black;
 
 // Fonts
 

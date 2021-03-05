@@ -4,6 +4,9 @@ body {
 
 header {
     box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.96) !important;  
 }
 
 
@@ -29,8 +32,6 @@ header {
 
 // spacing
 .main-nav {
-
-    transition: font-size 0.15s linear;
 
     .navbar-brand {
         img {
@@ -93,6 +94,9 @@ header {
     }
 
     @include media-breakpoint-up(xl) {
+
+        transition: font-size 0.25s linear;
+
         font-size: .72rem;
         font-size: 1.2vw;
 

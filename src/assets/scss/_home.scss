@@ -1,4 +1,4 @@
-// Place your own CSS or SCSS below this line.
+// Hero carousel
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -42,6 +42,7 @@
         h1 {
             font-size: 54px;
             line-height: 60px;
+            // max-width: ;
         }
         p {
             font-size: 20px;
@@ -75,10 +76,45 @@
         }
         p {
             font-size: 26px;
-            line-height: 38px;
+            line-height: 36px;
             max-width: 350px;
         }
     }
-
-
 }
+
+
+// Logo panel
+
+.logo-panel {
+    div {
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+
+    @include media-breakpoint-up(md) { 
+        div {
+            flex: 1 1 20%;
+        }
+    }
+}
+
+
+// Pill tabs
+
+#content-home {
+    .button-group {
+        .nav-item {
+            width: 50%;
+        }
+        .btn.btn-outline {
+            border: 1px solid $red;
+        }
+    }
+}
+
+
+
+
+
+
+

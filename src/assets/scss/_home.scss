@@ -1,0 +1,94 @@
+// Place your own CSS or SCSS below this line.
+
+.carousel-control-next,
+.carousel-control-prev {
+    color: rgba(0,0,0,0.6) !important;
+    transition: all 0.2s ease;
+    width: 8%;
+}
+
+.carousel-control-next:hover,
+.carousel-control-next:focus,
+.carousel-control-prev:hover,
+.carousel-control-prev:focus {
+    color: rgba(0,0,0,0.9) !important;
+}
+
+
+#heroCarouselHome {
+    font-family: "Poppins";
+
+    .hero-carousel-background {
+        background-image: url("../img/home/diagonal-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+        padding: 24px 12px 28%;
+    }
+
+    h1 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @include media-breakpoint-up(md) {
+        .hero-carousel-background {
+            background-image: url("../img/home/diagonal-tablet.svg");
+            padding: 72px 24px 15%;
+        }
+        h1 {
+            font-size: 54px;
+            line-height: 60px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .hero-carousel-background {
+            background-image: url("../img/home/diagonal-desktop.svg");
+            padding: 0 5% 3% 4%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }        
+        h1 {
+            font-size: 58px;
+            font-size: 5.5vw;
+            line-height: 60px;
+            line-height: 5.7vw;
+        }
+        p {
+            font-size: 20px;
+            font-size: 1.56vw;
+        }
+    }
+    @include media-breakpoint-up(xxl) {
+
+
+        // .hero-carousel-background {
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     padding: 0 0 4% 0;
+        // }
+
+        h1 {
+            font-size: 74px;
+            line-height: 78px;
+            max-width: 380px;
+        }
+        p {
+            font-size: 26px;
+            line-height: 38px;
+            max-width: 550px;
+        }
+    }
+
+
+}

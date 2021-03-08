@@ -13,20 +13,6 @@
   height: 100%;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-  color: rgba(0,0,0,0.6) !important;
-  transition: all 0.2s ease;
-  width: 8%;
-}
-
-.carousel-control-next:hover,
-.carousel-control-next:focus,
-.carousel-control-prev:hover,
-.carousel-control-prev:focus {
-  color: rgba(0,0,0,0.9) !important;
-}
-
 footer {
   font-size: 14px;
   line-height: 24px;
@@ -42,9 +28,3 @@ footer {
   }
 }
 
-.hero-carousel-background {
-  background-image: url("../img/home/diagonal.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 101%;
-}

@@ -1,12 +1,16 @@
 body {
-    padding-top: calc(5rem - 1px);
+    padding-top: 60px;
+
+    @include media-breakpoint-up(lg) { 
+        padding-top: calc(4.5rem - 1px);
+    }
 }
 
 header {
     box-shadow: 0 3px 6px rgba(0,0,0,.16);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.96) !important;  
+    background-color: rgba(255, 255, 255, 0.96) !important;
 }
 
 
@@ -18,7 +22,7 @@ header {
 
         &:hover,
         &.active {
-            color: $danger !important;
+            color: $red !important;
         }
     }
 
@@ -41,13 +45,19 @@ header {
     }
 
     @include media-breakpoint-down(md) {
-        // font-size: 1rem;
 
         padding-top: .5rem;
         padding-bottom: .5rem;
 
         .nav-item {
             padding-left: 0;
+        }
+
+        .navbar-brand {
+            img {
+                max-height: 34px;
+                width: auto;
+            }
         }
 
         .nav-item + .nav-item {
@@ -97,29 +107,14 @@ header {
 
         transition: font-size 0.25s linear;
 
-        font-size: .72rem;
-        font-size: 1.2vw;
+        font-size: 14px;
 
         .btn-primary.btn-sm {
-            font-size: .72rem;
-            font-size: 1.2vw;
+            font-size: 14px;
         }
 
         .nav-item {
             padding-left: 1.65rem;
-        }
-
-    }
-
-    @include media-breakpoint-up(xxl) {
-        font-size: .88rem;
-
-        .btn-primary.btn-sm {
-            font-size: .88rem;
-        }
-
-        .nav-item {
-            padding-left: 2rem;
         }
 
     }

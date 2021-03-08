@@ -14,7 +14,6 @@
     color: rgba(0,0,0,0.9) !important;
 }
 
-
 #heroCarouselHome {
     font-family: "Poppins";
 
@@ -52,7 +51,7 @@
     @include media-breakpoint-up(lg) {
         .hero-carousel-background {
             background-image: url("../img/home/diagonal-desktop.svg");
-            padding: 0 5% 3% 4%;
+            padding: 0 5% 4% 4%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -69,15 +68,6 @@
         }
     }
     @include media-breakpoint-up(xxl) {
-
-
-        // .hero-carousel-background {
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     padding: 0 0 4% 0;
-        // }
-
         h1 {
             font-size: 74px;
             line-height: 78px;
@@ -86,7 +76,7 @@
         p {
             font-size: 26px;
             line-height: 38px;
-            max-width: 550px;
+            max-width: 350px;
         }
     }
 

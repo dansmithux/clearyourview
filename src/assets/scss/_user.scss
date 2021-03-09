@@ -28,3 +28,10 @@ footer {
   }
 }
 
+.number-big {
+    font-size: 80px;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 90px;
+    }
+}

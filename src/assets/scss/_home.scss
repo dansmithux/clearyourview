@@ -4,7 +4,12 @@
 .carousel-control-prev {
     color: rgba(0,0,0,0.6) !important;
     transition: all 0.2s ease;
-    width: 8%;
+    width: 7%;
+
+    @include media-breakpoint-down(md) {
+        top: 35vw;
+        bottom: unset;
+    }
 }
 
 .carousel-control-next:hover,
@@ -42,7 +47,6 @@
         h1 {
             font-size: 54px;
             line-height: 60px;
-            // max-width: ;
         }
         p {
             font-size: 20px;
@@ -59,19 +63,16 @@
         }        
         h1 {
             font-size: 58px;
-            font-size: 5.5vw;
-            line-height: 60px;
-            line-height: 5.7vw;
+            line-height: 58px;
         }
         p {
             font-size: 20px;
-            font-size: 1.56vw;
         }
     }
     @include media-breakpoint-up(xxl) {
         h1 {
-            font-size: 74px;
-            line-height: 78px;
+            font-size: 68px;
+            line-height: 70px;
             max-width: 380px;
         }
         p {
@@ -101,11 +102,70 @@
 // Pill tabs
 #content-home {
     .button-group {
+        display: flex;
+
         .nav-item {
             width: 50%;
         }
-        .btn.btn-outline {
+        a.btn.btn-outline {
+            align-items: center;
+            display: flex;
             border: 1px solid $red;
+            height: 100%;
+            width: 100%;
+
+            span {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+// Response rate boxes
+.response-rate-box {
+    @include media-breakpoint-up(md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+    h3 {
+        font-size: 20px;
+        @include media-breakpoint-up(lg) {
+            font-size: 20px;
+            width: 32%;
+        }
+        @include media-breakpoint-up(xl) {
+            width: 42%;
+        }
+    }
+    h2 {
+        font-size: 44px;
+        font-weight: 600;
+        
+        @include media-breakpoint-up(md) {
+            border-left: 1px solid $white;
+            padding-left: 4%;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 38px;
+            padding-left: 4%;
+            width: 45%;
+        }
+        @include media-breakpoint-up(xl) {
+            font-size: 42px;
+            padding-left: 4%;
+            width: 38%;
+        }
+    }
+    p {
+        font-size: 18px;
+        @include media-breakpoint-up(lg) {
+            width: 22%;
+        }
+        @include media-breakpoint-up(xl) {
+            width: 18%;
         }
     }
 }

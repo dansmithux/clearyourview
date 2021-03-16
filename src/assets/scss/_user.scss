@@ -35,3 +35,12 @@ footer {
         font-size: 90px;
     }
 }
+
+.diagonal-hero {
+    @include media-breakpoint-up(xxl) {
+        &-text {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    }
+}

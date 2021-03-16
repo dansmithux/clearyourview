@@ -36,7 +36,6 @@ header {
 
 // spacing
 .main-nav {
-
     .navbar-brand {
         img {
             max-height: 40px;
@@ -45,12 +44,14 @@ header {
     }
 
     @include media-breakpoint-down(md) {
+        font-size: 1.1rem;
 
         padding-top: .5rem;
         padding-bottom: .5rem;
 
-        .nav-item {
-            padding-left: 0;
+        .navbar-nav {
+            padding-top: 12px;
+            padding-bottom: 12px;
         }
 
         .navbar-brand {
@@ -60,25 +61,31 @@ header {
             }
         }
 
-        .nav-item + .nav-item {
-            border-top: 1px solid $gray-100;
-            padding-top: .25rem;
-            padding-bottom: .25rem;
+        .nav-item {
+            padding-left: 0;
+
+            & + .nav-item {
+                padding-top: .25rem;
+                padding-bottom: .25rem;
+            }
+
+            &:last-of-type {
+                margin-top: 12px;
+            }
         }
 
         .nav-link {
-            padding-top: 0.75rem;
-            padding-bottom: 0.75rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
         }
 
         .btn-primary.btn-sm {
-            font-size: 1rem;
+            font-size: 1.05rem;
         }
     }
 
 
     @include media-breakpoint-up(lg) {
-
         font-size: .66rem;
         font-size: 1.16vw;
 
@@ -89,7 +96,6 @@ header {
 
         .nav-item {
             padding-left: 1rem;
-
             padding-top: 1.3rem;
             padding-bottom: 1.3rem;
             align-self: center;
@@ -100,14 +106,11 @@ header {
             letter-spacing: 1.6px;
             transition: border-color 0.2s linear;
         }
-
     }
 
     @include media-breakpoint-up(xl) {
-
-        transition: font-size 0.25s linear;
-
         font-size: 14px;
+        transition: font-size 0.25s linear;
 
         .btn-primary.btn-sm {
             font-size: 14px;
@@ -115,33 +118,6 @@ header {
 
         .nav-item {
             padding-left: 1.65rem;
-        }
-
-    }
-
-    @include media-breakpoint-down(md) {
-        font-size: 1rem;
-
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-
-        .nav-item {
-            padding-left: 0;
-        }
-
-        .nav-item + .nav-item {
-            border-top: 1px solid $gray-100;
-            padding-top: .25rem;
-            padding-bottom: .25rem;
-        }
-
-        .nav-link {
-            padding-top: 0.75rem;
-            padding-bottom: 0.75rem;
-        }
-
-        .btn-primary.btn-sm {
-            font-size: 1rem;
         }
     }
 }

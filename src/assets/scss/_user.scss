@@ -66,3 +66,136 @@ footer {
 }
 
 
+.survival-table-desktop {
+    font-size: 18px;
+    margin-top: 68px;
+
+    thead tr {
+        background-color: $yellow;
+        th {
+            font-weight: normal;
+            text-align: center;
+            padding: 12px;
+
+            &:first-of-type {
+                width: 30%;
+            }
+        }
+    }
+    tbody {
+        tr {
+            &:last-of-type {
+                background-color: #FDF7BD;
+            }
+
+            td {
+                padding: 12px;
+            }
+        }
+    }
+}
+
+.survival-table-mobile {
+    font-size: 16px;
+
+    thead tr {
+        background-color: $yellow;
+        th {
+            font-weight: normal;
+            padding: 12px;
+
+            &:first-of-type {
+                // width: 30%;
+            }
+        }
+    }
+    tbody {
+        tr {
+            &:last-of-type {
+                background-color: #FDF7BD;
+            }
+
+            td {
+                padding: 12px;
+            }
+        }
+    }
+}
+
+
+.data-card {
+    background-color: $white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.15);
+
+    &-header {
+        overflow: hidden;
+        background-color: $yellow;
+        background-image: url("../img/data/triangle.svg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+
+        padding: 36px 24px 24px;
+
+        @include media-breakpoint-up(md) {
+            min-height: unset;
+            padding: 52px 32px 0;
+            height: 165px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 52px 32px 0;
+            height: 190px;
+        }
+        
+        h4 {
+            font-size: 28px !important;
+        }
+    }
+
+    &-body {
+        overflow: hidden;
+        min-height: 200px;
+        padding: 24px 24px;
+
+        @include media-breakpoint-up(sm) {
+            min-height: unset;
+            padding: 30px 24px;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding: 24px 32px 0;
+            height: 270px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 24px 32px 0;
+            height: 415px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

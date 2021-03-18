@@ -52,6 +52,10 @@ footer {
     }
 }
 
+
+
+// LUNG AND COLO PAGES
+
 .biomarker-table {
     border: 2px solid $yellow;
 }
@@ -123,6 +127,9 @@ footer {
 }
 
 
+
+// DATA PAGE
+
 .data-card {
     background-color: $white;
     box-shadow: 0 3px 6px rgba(0,0,0,.15);
@@ -177,6 +184,121 @@ footer {
         }
     }
 }
+
+
+// RESOURCES
+
+.resources-content-split {
+    img {
+
+        max-height: 288px;
+
+        @include media-breakpoint-up(md) {
+            max-height: 373px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-height: 386px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+}
+
+
+.gray-row {
+
+    &-content {
+
+        padding: 48px 16px 60px;
+
+        &-image {
+            padding: 0 36px 48px;
+            text-align: center;
+
+            img {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+        }
+
+        &-text {
+
+            h5 { font-size: 14px; }
+            p { font-size: 14px; }
+        }
+
+        &-cta {
+            padding: 36px 0 0;
+
+            a { 
+                font-size: 18px !important;
+            }
+        }
+
+
+        @include media-breakpoint-up(sm) {
+            padding: 48px 36px 48px;
+        }
+
+
+        @include media-breakpoint-up(lg) {
+
+            display: inline-flex;
+            padding: 36px 0;
+
+            &-image {
+                padding: 0 0 0 48px;
+                width: 22%;
+                margin: 0;
+            }
+
+            &-text {
+                width: 55%;
+                padding: 36px 60px;
+
+                h5 { font-size: 20px; }
+                p { font-size: 16px; }
+            }
+
+            &-cta {
+                border-left: 1px solid #707070;
+                width: 24%;
+                justify-content: center;
+                padding: 0 12px;
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

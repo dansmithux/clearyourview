@@ -1,0 +1,146 @@
+{% extends "layouts/default.njk" %}
+{% set title = "News & Media" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-white', 'navbar-light', 'news')}}
+
+<main id="content">
+
+    <div class="diagonal-hero bg-red text-dark">
+        <div class="row no-gutters">
+            <div class="col-lg-5">
+               <picture>
+                    <source srcset="assets/img/shared/hero-desktop-tall.svg"
+                    media="(min-width: 992px)">
+                    <source srcset="assets/img/shared/hero-tablet.svg"
+                    media="(min-width: 768px)">                            
+                    <source srcset="assets/img/shared/hero-mobile.svg"
+                    media="(min-width: 0px)">
+                    <img src="assets/img/shared/hero-desktop-tall.svg" alt="" class="w-100" />
+                </picture>
+            </div>
+            <div class="col-lg-7 row no-gutters align-items-lg-center px-3 px-lg-4 px-xl-5  py-5 py-lg-0">
+                <div class="diagonal-hero-text">
+                    <h2 class="font-weight-semibold">Media</h2>
+                    <p class="lead-2 font-heading font-weight-normal mt-4 mb-0">Clear Your View is an initiative to ensure all advanced cancer patients receive complete biomarker testing before first-line treatment. We offer key resources for journalists, editors, and other media&nbsp;professionals</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent news -->
+    <div class="container my-6">
+
+        <h3 class="font-sans-serif">Recent News</h3>
+
+        <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">July 10, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://www.healio.com/news/hematology-oncology/20200710/campaign-promotes-comprehensive-genomic-testing-of-patients-with-advanced-nsclc">
+                    Campaign Promotes Comprehensive Genomic Testing of Patients with Advanced NSCLC
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">June 16, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://www.fda.gov/drugs/drug-approvals-and-databases/fda-approves-pembrolizumab-adults-and-children-tmb-h-solid-tumors">
+                    FDA: FDA Approves Pembrolizumab for Adults and Children with TMB-H Solid Tumors
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">May 25, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://healthprofessionalradio.com.au/go2-foundation-for-lung-cancer-and-clear-your-view-campaign/">
+                    HEALTH PROFESSIONAL RADIO: GO2 Foundation for Lung Cancer and “Clear Your View” Campaign
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">May 22, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://www.targetedonc.com/view/covid-19-presents-an-opportunity-for-precision-medicine-to-play-expanded-role-in-care">
+                    TARGETED ONCOLOGY: COVID-19 Presents an Opportunity for Precision Medicine to Play Expanded Role in Care
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">May 21, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://www.cancertherapyadvisor.com/home/cancer-topics/general-oncology/genomics-new-strategies-engage-community-oncology-treatment/">
+                    CANCER THERAPY ADVISOR: Genomics Industry Tries New Strategies to Engage Community Oncologists
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">May 18, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://healthprofessionalradio.com.au/clear-your-view-campaign-nsclc-genomic-testing/">
+                    HEALTH PROFESSIONAL RADIO: Clear Your View Campaign – NSCLC Genomic Testing
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">May 8, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://www.fda.gov/news-events/press-announcements/fda-approves-first-therapy-patients-lung-and-thyroid-cancers-certain-genetic-mutation-or-fusion">
+                    FDA: FDA Approves First Therapy for Patients with Lung and Thyroid Cancers with a Certain Genetic Mutation or Fusion
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">May 6, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://www.fda.gov/news-events/press-announcements/fda-approves-first-targeted-therapy-treat-aggressive-form-lung-cancer">
+                    FDA: FDA Approves First Targeted Therapy to Treat Aggressive Form of Lung Cancer
+                </a>
+            </p>
+        </div>
+
+            <div class="mt-5 news-row pb-2">
+            <p class="font-weight-semibold mb-0">May 5, 2020</p>
+            <p class="lead-2">
+                <a target="_blank" href="https://clearyourview.org/press/050520/">
+                    CLEAR YOUR VIEW: Guardant Health and Patient Advocacy Groups Join Forces to Raise Awareness of the Importance of Complete Biomarker Testing for Patients with Metastatic Non-Small Cell Lung Cancer
+                </a>
+            </p>
+        </div>
+
+        <div class="mt-5">
+            <a class="text-red text-underline font-weight-semibold" href="news.html">Back</a>
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="bg-yellow">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-xs-10 col-sm-9 col-lg-5">
+                    <h3 class="font-sans-serif mb-0">For more information about the Clear Your View Initiative, contact:</h3>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-5 mt-4 mt-lg-0">
+                    <p class="font-weight-semibold mb-0">Government Affairs & Patient Advocacy</p>
+                    <p>advocacy@ClearYourView.org</p>
+
+                    <p class="font-weight-semibold mb-0">Media</p>
+                    <p class="mb-0">media@ClearYourView.org</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{% import 'macros/footer.njk' as footer -%}
+{{footer.footer('bg-dark', 'text-white')}}
+{% endblock %}

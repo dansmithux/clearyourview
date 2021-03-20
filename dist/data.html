@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVR97X6L2R"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-VVR97X6L2R');
-    </script>
-    
     <title>Clear Your View | Data</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -37,6 +27,9 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
 
+    <!-- Social media - ShareThis -->
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5eac9ab120c7a300125ce3b9&amp;product=inline-share-buttons" async="async"></script>
+    <script async="" src="https://buttons-config.sharethis.com/js/5eac9ab120c7a300125ce3b9.js"></script>
 
 </head>
 
@@ -61,7 +54,6 @@
 
             </button>
   
-
             <div class="collapse navbar-collapse text-uppercase" id="navbarContent">
                 <ul class="navbar-nav ml-auto">
                     
@@ -86,15 +78,68 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="thank-you.html" class="btn btn-primary btn-sm">Commit to Test</a>
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#commitToTestModal">Commit to Test</button>
                     </li>
-
 
                 </ul>
             </div>
         </nav>
     </div>
 </header>
+
+<!-- "Commit to test" modal -->
+<div class="modal form-modal fade" id="commitToTestModal" tabindex="-1" role="dialog" aria-labelledby="commitToTestModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="container px-4 pb-5">
+                <div class="col-md-10 offset-md-1">
+                    <h4 class="font-weight-semibold text-center" id="commitToTestModalTitle">Join thousands of oncologists and clear your view with complete biomarker testing.</h4>
+                </div>
+                <div class="modal-body bg-white mt-4  px-4 px-md-5  py-5">
+
+                    <form>
+                        <div class="form-row form-group">
+                            <div class="col">
+                                <label for="exampleInputEmail1">First name*</label>
+                                <input type="text" class="form-control" id="first-name" placeholder="">
+                            </div>
+                            <div class="col">
+                                <label for="exampleInputEmail1">Last name*</label>
+                                <input type="text" class="form-control" id="last-name" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email*</label>
+                            <input type="email" class="form-control" id="email" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Specialty*</label>
+                            <input type="email" class="form-control" id="specialty" placeholder="">
+                        </div>
+
+                        <p class="mt-3 mb-0">* All fields are required</p>
+
+                        <button type="button" class="btn btn-sm btn-primary mt-4 px-6">Send</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <script>
+    $( document ).ready(function() {
+        $("#commitToTestModal").modal("show");
+    });
+</script> -->
 
 
 
@@ -122,16 +167,7 @@
             </div>
         </div>
 
-
-
-
-
         <div class="container bg-gray050 my-6">
-
-
-
-
-
             <div class="row">
 
                 <div class="col-lg-6">
@@ -165,9 +201,6 @@
                 </div>
 
             </div>
-
-
-
 
             <div class="row mt-4">
 
@@ -203,10 +236,6 @@
 
             </div>            
 
-
-
-
-
             <div class="row mt-4">
 
                 <div class="col-lg-6">
@@ -239,10 +268,7 @@
                     </div>
                 </div>
 
-            </div>            
-
-
-
+            </div>
 
             <div class="row mt-4">
 
@@ -276,10 +302,7 @@
                     </div>
                 </div>
 
-            </div>            
-
-
-
+            </div>
 
             <div class="row mt-4">
 
@@ -313,11 +336,7 @@
                     </div>
                 </div>
 
-            </div>            
-
-
-
-
+            </div>
 
             <div class="row mt-4">
 
@@ -351,27 +370,25 @@
                     </div>
                 </div>
 
-            </div>            
-
-
+            </div>
 
         </div>
-
-
-
-
 
     </main>
 
 
 
     <footer class="bg-black text-light">
-        <div class="container py-5 py-md-6">
+     <div class="container py-5 py-md-6">
             <div class="row justify-content-md-between">
-
                 <div class="col-12 col-md-6">
-                    <div>                        
-                        <a href="#" class="social-media-link mr-4">
+                    <div>
+
+                        <div class="sharethis-inline-share-buttons st-left  st-inline-share-buttons st-animated" id="st-1">
+                        </div>
+
+                        <!-- Original social media icons -->
+                        <!-- <a href="#" class="social-media-link mr-4">
                             <svg id="Icon_Twitter" xmlns="http://www.w3.org/2000/svg" width="22" height="17.875" viewBox="0 0 22 17.875">
                                 <path id="Icon_Twitter-2" d="M22,2.105a9.141,9.141,0,0,1-2.245,2.342v.591A12.744,12.744,0,0,1,6.929,17.875,12.675,12.675,0,0,1,0,16.038a7.125,7.125,0,0,0,1.074.075,9.108,9.108,0,0,0,5.6-2.138,4.5,4.5,0,0,1-4.2-3.137,4.436,4.436,0,0,0,.838.086,4.513,4.513,0,0,0,1.2-.161A4.509,4.509,0,0,1,.892,6.338V6.284a4.524,4.524,0,0,0,2.041.559A4.491,4.491,0,0,1,.913,3.1,4.3,4.3,0,0,1,1.525.913a12.827,12.827,0,0,0,9.292,4.63,4.7,4.7,0,0,1-.1-1.042,4.493,4.493,0,0,1,4.5-4.5,4.669,4.669,0,0,1,3.319,1.418,9.06,9.06,0,0,0,2.847-1.1,4.475,4.475,0,0,1-1.987,2.5A8.8,8.8,0,0,0,22,2.105Z"/>
                             </svg>
@@ -387,7 +404,8 @@
                             <svg id="Icon_YouTube" xmlns="http://www.w3.org/2000/svg" width="30.102" height="21.08" viewBox="0 0 30.102 21.08">
                                 <path id="a" d="M121.282,88.3a3.769,3.769,0,0,0-2.666-2.661C116.275,85,106.862,85,106.862,85s-9.415,0-11.762.629A3.774,3.774,0,0,0,92.439,88.3a42.015,42.015,0,0,0,0,14.489,3.773,3.773,0,0,0,2.661,2.661c2.349.629,11.762.629,11.762.629s9.415,0,11.759-.629a3.769,3.769,0,0,0,2.661-2.661,42.015,42.015,0,0,0,0-14.489Zm-17.43,11.759V91.031l7.827,4.514Z" transform="translate(-91.81 -85)"/>
                             </svg>
-                        </a>
+                        </a> -->
+
                     </div>
                     <div class="mt-5">
                         <strong>ClearYourView.org</strong>
@@ -398,15 +416,12 @@
                 </div>
 
                 <div class="col-12 col-md-6 text-lg-right mt-5 mt-md-0">
-
-                    <p>Email: Team@ClearYourView.org</p>
-
+                    <p>Email: <a href="mailto:Team@ClearYourView.org">Team@ClearYourView.org</a></p>
                     <div class="mt-5 mt-md-4">
                         <p class="mb-0"><a href="terms-of-use.html">Terms of Use</a></p>
                         <p class="mb-4"><a href="https://guardanthealth.com/contact/privacy-policy/" target="_blank">Privacy Policy</a></p>
                         <p class="mb-0"><a href="references.html">Comprehensive Reference Guide</a></p>
                     </div>
-
                 </div>
 
             </div>

@@ -19,3 +19,9 @@
 .border-radius-none {
 	border-radius: 0;
 }
+
+.arrow-link:hover span {
+	text-decoration: underline;
+	color: $red;
+}
+

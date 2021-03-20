@@ -53,6 +53,11 @@ footer {
 }
 
 
+.bg-yellow p a {
+    border-bottom: 1px solid $black;
+}
+
+
 
 // LUNG AND COLO PAGES
 
@@ -68,7 +73,6 @@ footer {
         padding-left: 32px;
     }
 }
-
 
 .survival-table-desktop {
     font-size: 18px;
@@ -126,6 +130,13 @@ footer {
     }
 }
 
+.colo-pie-chart {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+        width: 80%;
+    }
+}
 
 
 // DATA PAGE
@@ -213,7 +224,6 @@ footer {
     }
 }
 
-
 .gray-row {
 
     &-content {
@@ -276,7 +286,6 @@ footer {
 }
 
 
-
 // News + media
 
 .news-row {
@@ -321,6 +330,10 @@ footer {
         span {
             vertical-align: text-top;
         }
+
+        &:hover span {
+            text-decoration: underline;
+        }
     }
 
     &-download-label {
@@ -329,22 +342,3 @@ footer {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
